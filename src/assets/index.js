@@ -32,7 +32,11 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import stockkeep from "./stockkeep.png";
+import gamesooq from "./gamesooq.png";
+import smartcity from "./smartcity.png";
+import tripguide from "./tripguide.png";  
+import larbi from "./larbi.jpg";
 
 export {
   logo,
@@ -46,9 +50,13 @@ export {
   naftal,
   fiverr,
   css,
+  larbi,
   docker,
   figma,
   git,
+  stockkeep,
+  gamesooq,
+  smartcity,
   html,
   lycee,
   javascript,

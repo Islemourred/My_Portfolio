@@ -1,3 +1,4 @@
+import { s } from "maath/dist/misc-7d870b3c.esm";
 import {
   mobile,
   backend,
@@ -16,8 +17,12 @@ import {
   figma,
   docker,
   meta,
+  larbi,
   starbucks,
   esi,
+  stockkeep,
+  gamesooq,
+  smartcity,
   naftal,
   fiverr,
   lycee,
@@ -143,8 +148,8 @@ const experiences = [
     iconBg: "#ffffff",
     date: "September 2018 - June 2021",
     points: [
-      "Completed secondary education in the scientific stream with strong focus on mathematics, physics, and natural sciences.",
       "Graduated with high distinction, achieving a final average of 18.32/20.",
+      "Completed secondary education in the scientific stream with strong focus on mathematics, physics, and natural sciences.",
       "Developed strong analytical thinking and problem-solving skills, laying the foundation for future studies in computer science and AI.",
       "Engaged in various scientific projects and collaborative activities to enhance critical thinking and academic performance.",
     ],
@@ -188,94 +193,78 @@ const work = [
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    testimonial: "You're a talented friend and an amazing frontend developer. Your UI/UX designs are always clean, creative, and user friendly. Proud of your work keep going.",
+    name: "Larbi Achraf",
+    designation: "Full Stack Web Developer\n& AI Engineer",
+    linkedinUrl: "https://www.linkedin.com/in/larbi-achraf-01902a283/",
+    image: larbi,
   },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
+  
 ];
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Stockkeep",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Web and mobile platform for managing store inventory, enabling users to track, request, validate, and approve stock movements and orders across multiple roles, ensuring efficient and structured supply chain operations.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "Flutter",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Django",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: stockkeep,
+    source_code_link: "https://github.com/Islemourred/Stockkeep_FullProject",
   },
   {
-    name: "Job IT",
+    name: "GameSooQ",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Mobile app with landing page and admin dashboard that allows users to exchange video games securely, featuring real time chat, exchange tracking. All managed through a modern dashboard for monitoring user activity and app statistics.",
     tags: [
       {
-        name: "react",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Flutter",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "FireBase",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: gamesooq,
+    source_code_link: "https://github.com/Islemourred/GameSooQ_Web",
   },
   {
-    name: "Trip Guide",
+    name: "SmartCity",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "AI-powered web platform with real time vehicle detection and speed violation monitoring using YOLO , integrated with a React dashboard to visualize traffic incidents, track license plates, and display smart city statistics for efficient traffic law enforcement.",
     tags: [
       {
-        name: "nextjs",
+        name: "React",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "Yolo",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "FastAPI",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: smartcity,
+    source_code_link: "https://github.com/Islemourred/Project_2CS",
   },
 ];
 
