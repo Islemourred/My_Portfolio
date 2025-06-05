@@ -83,7 +83,7 @@ const Works = () => {
           These projects reflect my journey as a computer science student.
           They include multidisciplinary academic work, real world freelance projects, and innovative solutions developed during hackathons.
           Each project showcases my ability to tackle real challenges using a variety of technologies from web and mobile development to machine learning, data analysis, and modern design practices.
-          You’ll find links to live demos and code repositories that demonstrate not only technical skills but also creativity, collaboration, and problem solving under pressure.
+          You'll find links to live demos and code repositories that demonstrate not only technical skills but also creativity, collaboration, and problem solving under pressure.
         </motion.p>
       </div>
 
@@ -97,4 +97,4 @@ const Works = () => {
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
