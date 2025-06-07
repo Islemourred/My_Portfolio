@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             <div className="max-w-[300px] mt-6 p-4 bg-white/5 rounded-lg border border-white/10 backdrop-blur-sm">
               <p className="text-white/70 italic text-sm leading-relaxed">
-                "Design is not just what it looks like and feels like. Design is how it works."
+                "Design isn't just what it looks like and feels like. Design is how it works."
                 <span className="block mt-2 text-white/50 text-xs">- Steve Jobs</span>
               </p>
             </div>
