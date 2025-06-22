@@ -66,11 +66,11 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-2 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-white p-8 rounded-2xl shadow-card border border-gray-100'
+        className='flex-[1] bg-white p-8 rounded-2xl shadow-card border border-gray-100'
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
@@ -114,21 +114,35 @@ const Contact = () => {
             />
           </label>
 
-          <button
-            type='submit'
-            className='bg-gradient-to-r from-accent-blue to-blue-400 py-3 px-8 rounded-xl outline-none w-fit text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105'
-          >
-            {loading ? "Sending..." : "Send"}
-          </button>
+          <div className="flex justify-center">
+            <button
+              type='submit'
+              className='bg-gradient-to-r from-accent-blue to-blue-400 py-4 px-12 rounded-xl outline-none text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 text-lg font-regular'
+            >
+              {loading ? (
+                <>
+                  <svg className="animate-spin h-5 w-5" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none"></circle>
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                  </svg>
+                  Sending...
+                </>
+              ) : (
+                <>
+                  Send
+                </>
+              )}
+            </button>
+          </div>
         </form>
       </motion.div>
 
-      <motion.div
+      {/* <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 md:h-[200px] h-[200px]'
       >
         <EarthCanvas />
-      </motion.div>
+      </motion.div> */}
     </div>
   );
 };
