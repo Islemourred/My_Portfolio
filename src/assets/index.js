@@ -29,6 +29,7 @@ import naftal from "./company/naftal.png";
 import fiverr from "./company/fiverr.png";
 import lycee from "./company/lycee.png";
 import tesla from "./company/tesla.png";
+import me from "./me.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -50,6 +51,7 @@ export {
   naftal,
   fiverr,
   css,
+  me,
   larbi,
   docker,
   figma,
