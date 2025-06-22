@@ -94,7 +94,7 @@ const Footer = () => {
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.97 }}
               >
-                <Instagram className="w-5 h-5" />
+                <Instagram className="h-5 w-5"/>
                 <span className="sr-only">Instagram</span>
               </motion.a>
             </div>
