@@ -18,7 +18,7 @@ const FeedbackCard = ({
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
     className='bg-white p-10 rounded-3xl xs:w-[320px] w-full shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100'
   >
-    <p className='text-accent-purple font-black text-[48px]'>"</p>
+    <p className='text-accent-blue font-black text-[48px]'>"</p>
 
     <div className='mt-1'>
       <p className='text-white-100 tracking-wider text-[18px]'>{testimonial}</p>
@@ -31,7 +31,7 @@ const FeedbackCard = ({
                 href={linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-5 h-5 flex items-center justify-center text-accent-blue hover:text-accent-purple transition-colors duration-300"
+                className="w-5 h-5 flex items-center justify-center text-accent-blue hover:text-blue-400 transition-colors duration-300"
                 title="View LinkedIn Profile"
               >
                 <svg
@@ -54,7 +54,7 @@ const FeedbackCard = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className='w-12 h-12 rounded-full object-cover border-2 border-accent-purple/20'
+          className='w-12 h-12 rounded-full object-cover border-2 border-accent-blue/20'
         />
       </div>
     </div>

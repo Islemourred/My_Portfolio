@@ -11,7 +11,7 @@ const Avatar = () => {
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        <div className="absolute inset-0 rounded-full bg-accent-purple/10 blur-xl" />
+        <div className="absolute inset-0 rounded-full bg-accent-blue/10 blur-xl" />
         <motion.img
           src={me}
           alt="Islem Ourred"

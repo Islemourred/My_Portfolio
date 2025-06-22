@@ -7,7 +7,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-gradient-to-b from-white via-blue-50 to-purple-50 py-10 mt-4 relative overflow-hidden shadow-soft">
+    <footer className="bg-gradient-to-b from-white via-blue-50 to-blue-100 py-10 mt-4 relative overflow-hidden shadow-soft">
       <div className="absolute inset-0 opacity-5">
         <div className="absolute top-0 left-0 w-full h-full"></div>
       </div>
@@ -35,24 +35,24 @@ const Footer = () => {
               <li>
                 <a
                   href="tel:+213672443287"
-                  className="flex items-center text-secondary hover:text-accent-purple transition-colors duration-300"
+                  className="flex items-center text-secondary hover:text-accent-blue transition-colors duration-300"
                 >
-                  <Phone className="w-5 h-5 mr-3 text-accent-purple" />
+                  <Phone className="w-5 h-5 mr-3 text-accent-blue" />
                   <span>+213 672 44 32 87 / +213 552 94 29 54</span>
                 </a>
               </li>
               <li>
                 <a
                   href="mailto:islemcharafeddine85@gmail.com"
-                  className="flex items-center text-secondary hover:text-accent-purple transition-colors duration-300"
+                  className="flex items-center text-secondary hover:text-accent-blue transition-colors duration-300"
                 >
-                  <Mail className="w-5 h-5 mr-3 text-accent-purple" />
+                  <Mail className="w-5 h-5 mr-3 text-accent-blue" />
                   <span>islemcharafeddine85@gmail.com</span>
                 </a>
               </li>
               <li>
                 <div className="flex items-center text-secondary">
-                  <MapPin className="w-5 h-5 mr-3 text-accent-purple" />
+                  <MapPin className="w-5 h-5 mr-3 text-accent-blue" />
                 <span>Sidi Bel Abbes, Algeria</span>
                 </div>
               </li>
@@ -66,7 +66,7 @@ const Footer = () => {
                 href="https://github.com/Islemourred"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-purple hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-blue hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.97 }}
               >
@@ -78,7 +78,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/in/islem-ourred-02380327a/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-purple hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-blue hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.97 }}
               >
@@ -90,7 +90,7 @@ const Footer = () => {
                 href="https://www.instagram.com/islem_ord/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-purple hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
+                className="flex items-center justify-center w-10 h-10 rounded-full bg-white/80 backdrop-blur-sm text-secondary hover:bg-accent-blue hover:text-white transition-all duration-300 shadow-soft border border-gray-200"
                 whileHover={{ y: -3 }}
                 whileTap={{ scale: 0.97 }}
               >
@@ -103,7 +103,7 @@ const Footer = () => {
               <motion.a
                 href="/Islem's_CV.pdf"
                 download
-                className="group flex items-center justify-center gap-2 bg-gradient-to-r from-accent-purple to-accent-blue py-3 px-6 rounded-lg text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+                className="group flex items-center justify-center gap-2 bg-gradient-to-r from-accent-blue to-blue-400 py-3 px-6 rounded-lg text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
               >

@@ -55,8 +55,8 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`${
-                  active === nav.title ? "text-accent-purple" : "text-secondary"
-                } hover:text-accent-purple text-[18px] font-medium cursor-pointer transition-colors duration-300`}
+                  active === nav.title ? "text-accent-blue" : "text-secondary"
+                } hover:text-accent-blue text-[18px] font-medium cursor-pointer transition-colors duration-300`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
@@ -70,7 +70,7 @@ const Navbar = () => {
               href="https://github.com/Islemourred"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-accent-purple transition-colors duration-300"
+              className="text-secondary hover:text-accent-blue transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
@@ -85,7 +85,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/islem-ourred-02380327a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary hover:text-accent-purple transition-colors duration-300"
+              className="text-secondary hover:text-accent-blue transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
@@ -117,7 +117,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-accent-purple" : "text-secondary"
+                    active === nav.title ? "text-accent-blue" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -133,7 +133,7 @@ const Navbar = () => {
                   href="https://github.com/Islemourred"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary hover:text-accent-purple transition-colors duration-300"
+                  className="text-secondary hover:text-accent-blue transition-colors duration-300"
                 >
                   <svg
                     className="w-6 h-6"
@@ -148,7 +148,7 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/islem-ourred-b5b5b4250/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-secondary hover:text-accent-purple transition-colors duration-300"
+                  className="text-secondary hover:text-accent-blue transition-colors duration-300"
                 >
                   <svg
                     className="w-6 h-6"

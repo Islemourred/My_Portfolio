@@ -88,7 +88,7 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-purple focus:ring-2 focus:ring-accent-purple/20 transition-all duration-300'
+              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20 transition-all duration-300'
             />
           </label>
           <label className='flex flex-col'>
@@ -99,7 +99,7 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your web address?"
-              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-purple focus:ring-2 focus:ring-accent-purple/20 transition-all duration-300'
+              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20 transition-all duration-300'
             />
           </label>
           <label className='flex flex-col'>
@@ -110,13 +110,13 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder='What you want to say?'
-              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-purple focus:ring-2 focus:ring-accent-purple/20 transition-all duration-300 resize-none'
+              className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-lg outline-none border border-gray-200 font-medium focus:border-accent-blue focus:ring-2 focus:ring-accent-blue/20 transition-all duration-300 resize-none'
             />
           </label>
 
           <button
             type='submit'
-            className='bg-gradient-to-r from-accent-purple to-accent-blue py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105'
+            className='bg-gradient-to-r from-accent-blue to-blue-400 py-3 px-8 rounded-xl outline-none w-fit text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105'
           >
             {loading ? "Sending..." : "Send"}
           </button>
