@@ -63,7 +63,7 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-gradient-to-br from-blue-50 via-white  rounded-[20px] shadow-soft`}>
+    <div className={`mt-12 bg-gradient-to-br from-blue-50 via-white rounded-[20px] shadow-soft`}>
       <div
         className={`bg-white/80 backdrop-blur-sm rounded-2xl ${styles.padding} min-h-[300px] shadow-card`}
       >
