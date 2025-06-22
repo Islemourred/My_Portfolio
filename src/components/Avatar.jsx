@@ -6,7 +6,7 @@ const Avatar = () => {
   return (
     <div className="flex justify-center items-center">
       <motion.div
-        className="relative w-64 h-64 md:w-80 md:h-80"
+        className="relative w-48 h-48 sm:w-64 sm:h-64 md:w-80 md:h-80"
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
