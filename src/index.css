@@ -10,7 +10,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 .hash-span {
@@ -20,62 +20,62 @@
 }
 
 .black-gradient {
-  background: #000000; /* fallback for old browsers */
+  background: #f8fafc; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #434343,
-    #000000
+    #e2e8f0,
+    #f1f5f9
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #434343,
-    #000000
+    #e2e8f0,
+    #f1f5f9
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+  background: #8b5cf6;
+  background: linear-gradient(-90deg, #8b5cf6 0%, rgba(139, 92, 246, 0.1) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
+    #8b5cf6 0%,
+    rgba(139, 92, 246, 0.1) 100%
   );
 }
 
 .green-pink-gradient {
-  background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: "#10b981";
+  background: linear-gradient(90.13deg, #10b981 1.9%, #ec4899 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #10b981 1.9%, #ec4899 97.5%);
 }
 
 .orange-text-gradient {
-  background: #f12711; /* fallback for old browsers */
+  background: #f59e0b; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #f12711,
-    #f5af19
+    #f59e0b,
+    #f97316
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #f12711,
-    #f5af19
+    #f59e0b,
+    #f97316
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .green-text-gradient {
-  background: #11998e; /* fallback for old browsers */
+  background: #10b981; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #10b981,
+    #34d399
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #11998e,
-    #38ef7d
+    #10b981,
+    #34d399
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83,32 +83,32 @@
 
 .blue-text-gradient {
   /* background: -webkit-linear-gradient(#eee, #333); */
-  background: #56ccf2; /* fallback for old browsers */
+  background: #3b82f6; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #2f80ed,
-    #56ccf2
+    #1d4ed8,
+    #3b82f6
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #2f80ed,
-    #56ccf2
+    #1d4ed8,
+    #3b82f6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pink-text-gradient {
-  background: #ec008c; /* fallback for old browsers */
+  background: #ec4899; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to top,
-    #ec008c,
-    #fc6767
+    #ec4899,
+    #f472b6
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to top,
-    #ec008c,
-    #fc6767
+    #ec4899,
+    #f472b6
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -129,76 +129,76 @@
 @keyframes mulShdSpin {
   0%,
   100% {
-    box-shadow: 0em -2.6em 0em 0em #ffffff,
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.5),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7);
+    box-shadow: 0em -2.6em 0em 0em #3b82f6,
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.2),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.2),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.2),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.5),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.7);
   }
   12.5% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.7),
-      1.8em -1.8em 0 0em #ffffff, 2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.7),
+      1.8em -1.8em 0 0em #3b82f6, 2.5em 0em 0 0em rgba(59, 130, 246, 0.2),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.2),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.2),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.5);
   }
   25% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.5),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.7), 2.5em 0em 0 0em #ffffff,
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.5),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.7), 2.5em 0em 0 0em #3b82f6,
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.2),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.2),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2);
   }
   37.5% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.5),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.7), 1.75em 1.75em 0 0em #ffffff,
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.2),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.5),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.7), 1.75em 1.75em 0 0em #3b82f6,
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.2),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2);
   }
   50% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.5),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.7), 0em 2.5em 0 0em #ffffff,
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.2),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.2),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.5),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.7), 0em 2.5em 0 0em #3b82f6,
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.2),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2);
   }
   62.5% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.5),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.7), -1.8em 1.8em 0 0em #ffffff,
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.2),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.2),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.5),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.7), -1.8em 1.8em 0 0em #3b82f6,
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2);
   }
   75% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.5),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.7), -2.6em 0em 0 0em #ffffff,
-      -1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2);
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.2),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.2),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.2),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.5),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.7), -2.6em 0em 0 0em #3b82f6,
+      -1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2);
   }
   87.5% {
-    box-shadow: 0em -2.6em 0em 0em rgba(255, 255, 255, 0.2),
-      1.8em -1.8em 0 0em rgba(255, 255, 255, 0.2),
-      2.5em 0em 0 0em rgba(255, 255, 255, 0.2),
-      1.75em 1.75em 0 0em rgba(255, 255, 255, 0.2),
-      0em 2.5em 0 0em rgba(255, 255, 255, 0.2),
-      -1.8em 1.8em 0 0em rgba(255, 255, 255, 0.5),
-      -2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
+    box-shadow: 0em -2.6em 0em 0em rgba(59, 130, 246, 0.2),
+      1.8em -1.8em 0 0em rgba(59, 130, 246, 0.2),
+      2.5em 0em 0 0em rgba(59, 130, 246, 0.2),
+      1.75em 1.75em 0 0em rgba(59, 130, 246, 0.2),
+      0em 2.5em 0 0em rgba(59, 130, 246, 0.2),
+      -1.8em 1.8em 0 0em rgba(59, 130, 246, 0.5),
+      -2.6em 0em 0 0em rgba(59, 130, 246, 0.7), -1.8em -1.8em 0 0em #3b82f6;
   }
 }

@@ -24,7 +24,7 @@ const ProjectCard = ({
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
+        className='bg-white p-5 rounded-2xl sm:w-[360px] w-full shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100'
       >
         <div className='relative w-full h-[230px]'>
           <img
@@ -36,7 +36,7 @@ const ProjectCard = ({
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='bg-white-100/90 backdrop-blur-sm w-10 h-10 rounded-full flex justify-center items-center cursor-pointer shadow-lg hover:shadow-xl transition-all duration-300'
             >
               <img
                 src={github}
@@ -48,8 +48,8 @@ const ProjectCard = ({
         </div>
 
         <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
+          <h3 className='text-white-100 font-bold text-[24px]'>{name}</h3>
+          <p className='mt-2 text-dark-gray text-[14px]'>{description}</p>
         </div>
 
         <div className='mt-4 flex flex-wrap gap-2'>
@@ -78,7 +78,7 @@ const Works = () => {
       <div className='w-full flex'>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className='mt-3 text-dark-gray text-[17px] max-w-3xl leading-[30px]'
         >
           These projects reflect my journey as a computer science student.
           They include multidisciplinary academic work, real world freelance projects, and innovative solutions developed during hackathons.

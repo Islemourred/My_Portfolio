@@ -29,8 +29,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+      } w-full flex items-center py-5 fixed top-0 z-20 transition-all duration-300 ${
+        scrolled ? "bg-white/80 backdrop-blur-md shadow-soft" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[22px] font-bold cursor-pointer flex '>
+          <p className='text-white-100 text-[22px] font-bold cursor-pointer flex '>
             Islem's Portfolio &nbsp;
             {/* <span className='sm:block hidden'> | JavaScript Mastery</span> */}
           </p>
@@ -55,8 +55,8 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`${
-                  active === nav.title ? "text-white" : "text-secondary"
-                } hover:text-white text-[18px] font-medium cursor-pointer`}
+                  active === nav.title ? "text-accent-purple" : "text-secondary"
+                } hover:text-accent-purple text-[18px] font-medium cursor-pointer transition-colors duration-300`}
                 onClick={() => setActive(nav.title)}
               >
                 <a href={`#${nav.id}`}>{nav.title}</a>
@@ -70,7 +70,7 @@ const Navbar = () => {
               href="https://github.com/Islemourred"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-secondary transition-colors"
+              className="text-secondary hover:text-accent-purple transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
@@ -85,7 +85,7 @@ const Navbar = () => {
               href="https://www.linkedin.com/in/islem-ourred-02380327a/"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-white hover:text-secondary transition-colors"
+              className="text-secondary hover:text-accent-purple transition-colors duration-300"
             >
               <svg
                 className="w-6 h-6"
@@ -110,14 +110,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 bg-white/95 backdrop-blur-md absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl shadow-card border border-gray-100`}
           >
             <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-accent-purple" : "text-secondary"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -133,7 +133,7 @@ const Navbar = () => {
                   href="https://github.com/Islemourred"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-secondary transition-colors"
+                  className="text-secondary hover:text-accent-purple transition-colors duration-300"
                 >
                   <svg
                     className="w-6 h-6"
@@ -148,7 +148,7 @@ const Navbar = () => {
                   href="https://www.linkedin.com/in/islem-ourred-b5b5b4250/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white hover:text-secondary transition-colors"
+                  className="text-secondary hover:text-accent-purple transition-colors duration-300"
                 >
                   <svg
                     className="w-6 h-6"

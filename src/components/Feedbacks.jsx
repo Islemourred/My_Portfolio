@@ -16,12 +16,12 @@ const FeedbackCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-white p-10 rounded-3xl xs:w-[320px] w-full shadow-card hover:shadow-card-hover transition-all duration-300 border border-gray-100'
   >
-    <p className='text-white font-black text-[48px]'>"</p>
+    <p className='text-accent-purple font-black text-[48px]'>"</p>
 
     <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
+      <p className='text-white-100 tracking-wider text-[18px]'>{testimonial}</p>
 
       <div className='mt-7 flex justify-between items-center gap-1'>
         <div className='flex-1 flex flex-col'>
@@ -31,7 +31,7 @@ const FeedbackCard = ({
                 href={linkedinUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-5 h-5 flex items-center justify-center text-blue-500 hover:text-blue-400"
+                className="w-5 h-5 flex items-center justify-center text-accent-blue hover:text-accent-purple transition-colors duration-300"
                 title="View LinkedIn Profile"
               >
                 <svg
@@ -44,7 +44,7 @@ const FeedbackCard = ({
                 </svg>
               </a>
             )}
-            <p className='text-white font-medium text-[16px]'>{name}</p>
+            <p className='text-white-100 font-medium text-[16px]'>{name}</p>
           </div>
           <p className='mt-1 text-secondary text-[12px]'>
             {designation}
@@ -54,7 +54,7 @@ const FeedbackCard = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className='w-12 h-12 rounded-full object-cover'
+          className='w-12 h-12 rounded-full object-cover border-2 border-accent-purple/20'
         />
       </div>
     </div>
@@ -63,9 +63,9 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-12 bg-gradient-to-br from-blue-50 via-white to-purple-50 rounded-[20px] shadow-soft`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-white/80 backdrop-blur-sm rounded-2xl ${styles.padding} min-h-[300px] shadow-card`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Feedback from clients and teammates</p>
