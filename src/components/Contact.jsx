@@ -71,9 +71,9 @@ const Contact = () => {
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[1] max-w-lg p-[1px] rounded-[20px] shadow-card'
+        className='flex-[1] xl:max-w-lg w-full p-[1px] rounded-[20px] shadow-card'
       >
-        <div className='bg-white border-2 border-zinc-200 rounded-[20px] p-10'>
+        <div className='bg-white border-2 border-zinc-200 rounded-[20px] p-6 sm:p-8 xl:p-10'>
           <p className={styles.sectionSubText}>Get in touch</p>
           <h3 className={styles.sectionHeadText}>Contact.</h3>
           <form
@@ -145,9 +145,10 @@ const Contact = () => {
         </div>
       </motion.div>
 
+      {/* 3D Scene - Hidden on mobile and tablet, visible only on desktop (xl and above) */}
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 flex items-center justify-center min-h-[400px]'
+        className='hidden xl:flex xl:flex-1 items-center justify-center min-h-[400px]'
       >
        <Spline scene="https://prod.spline.design/vtS0IPhIDtRqOq-f/scene.splinecode" />
       </motion.div>
