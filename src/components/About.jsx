@@ -1,39 +1,22 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+import { newServices } from "../constants/newServices";
+import { FaBrain, FaLaptopCode, FaMobileAlt, FaPalette } from "react-icons/fa";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className="xs:w-[250px] w-full">
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card hover:shadow-card-hover transition-all duration-300"
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className="bg-white rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-      >
-        <img
-          src={icon}
-          alt="web-development"
-          className="w-16 h-16 object-contain"
-        />
-
-        <h3 className="text-white-100 text-[20px] font-bold text-center">
-          {title}
-        </h3>
+function ServiceCard({ title, description, icon: Icon, color }) {
+  return (
+    <div className={`w-full max-w-xs rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300 p-7 flex flex-col items-center text-center border border-gray-100 mx-auto ${color}`}>
+      <div className="flex items-center justify-center w-16 h-16 rounded-full bg-white/80 mb-4 shadow-md">
+        <Icon className="text-3xl text-blue-700" />
       </div>
-    </motion.div>
-  </Tilt>
-);
+      <h3 className="text-xl font-bold text-white mb-2 drop-shadow-lg">{title}</h3>
+      <p className="text-white/90 text-base mb-1 drop-shadow">{description}</p>
+    </div>
+  );
+}
 
 const About = () => {
   return (
@@ -55,9 +38,9 @@ const About = () => {
         that are both smart and easy to use.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
+      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {newServices.map((service) => (
+          <ServiceCard key={service.title} {...service} />
         ))}
       </div>
     </>
