@@ -122,7 +122,7 @@ const Footer = () => {
 
             <div className="mt-auto">
               <motion.a
-                href="public/CV_Ourred_Islem.pdf"
+                href="/CV_Ourred_Islem.pdf"
                 download
                 className="group flex items-center justify-center gap-2 bg-gradient-to-r from-accent-blue to-blue-400 py-3 px-6 rounded-lg text-white font-medium shadow-lg hover:shadow-xl transition-all duration-300"
                 whileHover={{ scale: 1.03 }}
