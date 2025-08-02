@@ -10,21 +10,21 @@ const achievements = [
     title: "AiFest25 – June 2025",
     description:
       "First place at the AiFest'25 Datathon (GDG on Campus: ENSIA), for developing innovative solutions in Computer Vision, NLP, reinforcement learning, EEG signal processing, and advanced model engineering such as BERT, U-Net, BiLSTM-CRF, and CNN-LSTM.",
-    image: "/award1.jpg",
+    image: "public/award1.jpg",
     link: "https://www.linkedin.com/posts/islem-ourred-02380327a_aichampion-deeplearning-kaggle-activity-7340545501034934272-4ttc?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQbVFsBGEyPIGJ0LzuEq1NRZrgFuOJ8opw",
   },
   {
     title: "Innovpost Hackathon – December 2024",
     description:
       "Second place with our innovative solution for Algérie Poste: an intuitive mobile app, a real-time analytics dashboard, and AI tools to boost customer engagement and satisfaction.",
-    image: "/award2.jpg",
+    image: "public/award2.jpg",
     link: "https://www.linkedin.com/posts/islem-ourred-02380327a_hello-community-im-very-excited-to-announce-activity-7272101449176690688-HsUD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQbVFsBGEyPIGJ0LzuEq1NRZrgFuOJ8opw",
   },
   {
     title: "DevFest2024 Hackathon - October 2024",
     description:
       "First place in the online phase with SmartBand, a real-time satellite bandwidth monitoring solution for ISPs, combining GNS3 simulation, Wireshark, and RESTful APIs.",
-    image: "/award3.png",
+    image: "public/award3.png",
     link: "https://www.linkedin.com/posts/islem-ourred-02380327a_devfest-algiers-2024-activity-7263746999101919233-tqmV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEQbVFsBGEyPIGJ0LzuEq1NRZrgFuOJ8opw",
   },
 ];

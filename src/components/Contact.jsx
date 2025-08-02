@@ -3,10 +3,8 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Spline from '@splinetool/react-spline';
 
 const Contact = () => {
   const formRef = useRef();
@@ -66,65 +64,62 @@ const Contact = () => {
   };
 
   return (
-    <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-2 `}
-    >
+    <div className="mt-12 flex flex-col items-center justify-center w-full">
       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[1] xl:max-w-lg w-full p-[1px] rounded-[20px] shadow-card'
+        variants={slideIn("up", "tween", 0.2, 1)}
+        className="w-full max-w-2xl p-[1px] rounded-[20px] shadow-card"
       >
-        <div className='bg-white border-2 border-zinc-200 rounded-[20px] p-6 sm:p-8 xl:p-10'>
-          <p className={styles.sectionSubText}>Get in touch</p>
-          <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <div className="bg-white border-2 border-zinc-200 rounded-[20px] p-6 sm:p-8 xl:p-10">
+          <p className={styles.sectionSubText + " text-center"}>Get in touch</p>
+          <h3 className={styles.sectionHeadText + " text-center"}>Contact.</h3>
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className='mt-12 flex flex-col gap-8'
+            className="mt-12 flex flex-col gap-8"
           >
-            <label className='flex flex-col'>
-              <span className='text-white-100 font-medium mb-4'>Your Name</span>
+            <label className="flex flex-col">
+              <span className="text-white-100 font-medium mb-4">Your Name</span>
               <div className="rounded-[12px] p-[1.5px] focus-within:green-pink-gradient bg-transparent transition-all duration-300">
                 <input
-                  type='text'
-                  name='name'
+                  type="text"
+                  name="name"
                   value={form.name}
                   onChange={handleChange}
                   placeholder="What's your name?"
-                  className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300'
+                  className="bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300"
                 />
               </div>
             </label>
-            <label className='flex flex-col'>
-              <span className='text-white-100 font-medium mb-4'>Your email</span>
+            <label className="flex flex-col">
+              <span className="text-white-100 font-medium mb-4">Your email</span>
               <div className="rounded-[12px] p-[1.5px] focus-within:green-pink-gradient bg-transparent transition-all duration-300">
                 <input
-                  type='email'
-                  name='email'
+                  type="email"
+                  name="email"
                   value={form.email}
                   onChange={handleChange}
                   placeholder="What's your web address?"
-                  className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300'
+                  className="bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300"
                 />
               </div>
             </label>
-            <label className='flex flex-col'>
-              <span className='text-white-100 font-medium mb-4'>Your Message</span>
+            <label className="flex flex-col">
+              <span className="text-white-100 font-medium mb-4">Your Message</span>
               <div className="rounded-[12px] p-[1.5px] focus-within:green-pink-gradient bg-transparent transition-all duration-300">
                 <textarea
                   rows={7}
-                  name='message'
+                  name="message"
                   value={form.message}
                   onChange={handleChange}
-                  placeholder='What you want to say?'
-                  className='bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300 resize-none'
+                  placeholder="What you want to say?"
+                  className="bg-light-gray py-4 px-6 placeholder:text-secondary text-white-100 rounded-[10px] outline-none border border-gray-200 font-medium w-full focus:border-accent-blue focus:ring-0 transition-all duration-300 resize-none"
                 />
               </div>
             </label>
-
             <div className="flex justify-center">
               <button
-                type='submit'
-                className='bg-gradient-to-r from-accent-blue to-blue-400 py-4 px-12 rounded-xl outline-none text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 text-lg font-regular'
+                type="submit"
+                className="bg-gradient-to-r from-accent-blue to-blue-400 py-4 px-12 rounded-xl outline-none text-white shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-105 flex items-center gap-3 text-lg font-regular"
               >
                 {loading ? (
                   <>
@@ -143,14 +138,6 @@ const Contact = () => {
             </div>
           </form>
         </div>
-      </motion.div>
-
-      {/* 3D Scene - Hidden on mobile and tablet, visible only on desktop (xl and above) */}
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='hidden xl:flex xl:flex-1 items-center justify-center min-h-[400px]'
-      >
-       <Spline scene="https://prod.spline.design/vtS0IPhIDtRqOq-f/scene.splinecode" />
       </motion.div>
     </div>
   );
