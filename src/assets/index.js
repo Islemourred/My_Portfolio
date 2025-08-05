@@ -30,6 +30,7 @@ import fiverr from "./company/fiverr.png";
 import lycee from "./company/lycee.png";
 import tesla from "./company/tesla.png";
 import me from "./me.png";
+import aek from "./aek.png";
 
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
@@ -41,6 +42,7 @@ import larbi from "./larbi.jpg";
 
 export {
   logo,
+  aek,
   backend,
   creator,
   mobile,

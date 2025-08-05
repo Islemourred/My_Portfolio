@@ -18,6 +18,7 @@ import {
   docker,
   meta,
   larbi,
+  aek,
   starbucks,
   esi,
   stockkeep,
@@ -209,11 +210,18 @@ const work = [
 
 const testimonials = [
   {
-    testimonial: "You're a talented friend and an amazing frontend developer. Your UI/UX designs are always clean, creative, and user friendly. Proud of your work keep going.",
+    testimonial: "You're a talented friend and an amazing frontend developer. Your UI/UX designs are always clean, creative, and user friendly, showing the effort and passion you put into every detail. Proud of your work keep going strong.",
     name: "Larbi Achraf",
     designation: "Full Stack Web Developer\n& AI Engineer",
     linkedinUrl: "https://www.linkedin.com/in/larbi-achraf-01902a283/",
     image: larbi,
+  },
+  {
+    testimonial: "I’m constantly impressed by how you take UI/UX designs from good to outstandin every interface you build feels polished, intuitive, and a joy to use. You blend design and development seamlessly. Keep up the amazing work, proud to call you a friend!",
+    name: "Abdelkader Ghez",
+    designation: "Full Stack Web/Mobile Developer",
+    linkedinUrl: "https://www.linkedin.com/in/abdelkader-ghez",
+    image: aek,
   },
   
 ];
